@@ -1,0 +1,219 @@
+.l1-container {
+  padding-left: 200px;
+  h1,
+  h2,
+  h3,
+  p {
+    font-family: sans-serif;
+    margin-bottom: 0rem;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+#header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  height: 100vh;
+  width: 200px;
+  box-sizing: border-box;
+  background: white;
+  border-right: 1px solid rgb(160, 160, 160);
+  .l1-nav-inner {
+    img {
+      width: 100%;
+    }
+  }
+}
+.l1-nav-items {
+  display: flex;
+  flex-direction: column;
+}
+.l1-nav-item {
+  color: grey;
+  padding: 40px;
+  border: 1px solid grey;
+}
+
+#l1-banner {
+  position: relative;
+  height: 600px;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+.l1-banner-inner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  .l1-banner-inner-text {
+    width: 80%;
+    margin: auto;
+    border-top: 4px solid white;
+    border-bottom: 4px solid white;
+    h1,
+    p {
+      color: white;
+      text-shadow: 2px 2px 2px grey;
+    }
+  }
+}
+
+#l1-about {
+  height: 400px;
+  h2 {
+    color: white;
+    text-shadow: 2px 2px 2px grey;
+    margin-left: 40px;
+  }
+  // background: orange;
+}
+.l1-about-inner {
+  height: 100%;
+  background-color: #ffd880;
+  background: linear-gradient(135deg, #fde67e55 25%, transparent 25%) -23px 0/
+      46px 46px,
+    linear-gradient(225deg, #fde67e 25%, transparent 25%) -23px 0/ 46px 46px,
+    linear-gradient(315deg, #fde67e55 25%, transparent 25%) 0px 0/ 46px 46px,
+    linear-gradient(45deg, #fde67e 25%, #ffd880 25%) 0px 0/ 46px 46px;
+}
+#l1-mission {
+  height: 100vh;
+  background: rgb(248, 248, 248);
+  .l1-mission-inner {
+    display: flex;
+  }
+}
+.l1-mission-text {
+  width: 40%;
+  padding: 24px;
+}
+.l1-mission-image {
+  width: 60%;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("https://images.pexels.com/photos/221012/pexels-photo-221012.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+  // background-image: url("https://images.pexels.com/photos/102720/pexels-photo-102720.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+}
+.l1-mission-buttons {
+  height: 100%;
+  width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#l1-events {
+  display: flex;
+  padding: 24px;
+  height: 70vh;
+  background-color: #e9a44f;
+  opacity: 1;
+  background: repeating-linear-gradient(
+    45deg,
+    #ecac47,
+    #ecac47 2px,
+    #e9a44f 2px,
+    #e9a44f 10px
+  );
+}
+// .l1-events-image {
+//   width: 60%;
+//   background-size: cover;
+//   height: 50vh;
+//   background-image: url("https://images.pexels.com/photos/207896/pexels-photo-207896.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+// }
+.l1-events-inner {
+  width: 100%;
+  .l1-event-item {
+    margin: 10px;
+    // border: 1px solid grey;
+    height: 122px;
+    display: flex;
+    justify-content: space-between;
+    img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+    }
+    .l1-date {
+      width: 120px;
+    }
+    .l1-event-details {
+      width: 800px;
+    }
+  }
+}
+
+.l1-cards {
+  display: flex;
+  justify-content: space-around;
+  // overflow-x: scroll;
+  // overflow-y: hidden;
+}
+.l1-card {
+  text-align: center;
+  height: 220px;
+  transition: 0.5s;
+  .l1-card-img {
+    height: 160px;
+    overflow: hidden;
+  }
+  img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: 0.5s;
+  }
+}
+.l1-card-text {
+  height: 60px;
+  background: orange;
+  padding-top: 14px;
+}
+.l1-card img:hover {
+  transform: scale(1.1);
+}
+
+.l1-button {
+  width: 400px;
+  border: 2px solid white;
+  padding: 120px;
+  color: white;
+  text-align: center;
+  font-size: 28px;
+  transition: 0.3s;
+}
+.l1-button:hover {
+  background: rgb(255, 209, 0);
+  color: white;
+}
+#l1-contributors {
+  height: 70vh;
+  padding: 24px;
+}
+.l1-contributors-inner {
+  text-align: center;
+}
+.l1-logo {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    width: 120px;
+    margin: 12px;
+    object-fit: contain;
+  }
+}
+footer {
+  height: 200px;
+  background: #333333;
+  color: white;
+  margin-bottom: 0;
+  p {
+    margin: 0;
+  }
+}
