@@ -17,47 +17,66 @@
 		</div>
 	</main> -->
   <section id="mountains">
-    <%= image_tag 'landing2/l2-back.png', id:"l2-back" %>
-    <%= image_tag 'landing2/l2-back-mid.png', id:"l2-back-mid" %>
-    <%= image_tag 'landing2/l2-mid.png', id:"l2-middle" %>
-    <%= image_tag 'landing2/l2-mid-front.png', id:"l2-mid-front" %>
-    <h1 id="scroll">Scroll</h1>
-    <%= image_tag 'landing2/l2-front.png', id:"l2-front" %>
+    <%= image_tag 'landing2/l2-back.png' , id:"l2-back" %>
+    <%= image_tag 'landing2/l2-back-mid.png' , id:"l2-back-mid" %>
+    <%= image_tag 'landing2/l2-mid.png' , id:"l2-middle" %>
+    <%= image_tag 'landing2/l2-mid-front.png' , id:"l2-mid-front" %>
+    <div id="scroll">
+      <h1>Landing</h1>
+      <h3>samples</h3>
+    </div>
+    <%= image_tag 'landing2/l2-front.png' , id:"l2-front" %>
   </section>
   <section id="clouds">
-    <%= image_tag 'sky.png', id:"l3-back" %>
-    <%= image_tag 'cloud2.png', id:"l3-cloud2" %>
-    <%= image_tag 'cloud1.png', id:"l3-cloud1" %>
-    <%= image_tag 'front.png', id:"l3-front" %>
+    <%= image_tag 'sky.jpg' , id:"l3-back" %>
+    <%= image_tag 'cloud2.png' , id:"l3-cloud2" %>
+    <%= image_tag 'cloud1.png' , id:"l3-cloud1" %>
+    <div class="clouds-header">
+      <h2>Title</h2>
+      <h3>Catch Phrase</h3>
+      <br>
+      <a href='#' class="clouds-button">button</a>
+    </div>
+    <div class='clouds-text'>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vehicula est id augue luctus, sit amet
+        scelerisque ex porta. Vivamus eu lorem nec enim auctor aliquam. Nam urna urna, tincidunt sit amet
+        fermentum at, aliquet laoreet tortor.</p>
+      <br>
+      <p>Sed id ante at metus gravida bibendum eu id elit. Duis vel turpis in augue cursus ornare. Nulla facilisi.
+        Suspendisse ipsum enim, ultrices nec elementum venenatis, aliquet at justo.</p>
+    </div>
+    <%= image_tag 'front.png' , id:"l3-front" %>
   </section>
-  <%= link_to 'source', 'https://www.fiverr.com/dazzy_daze/create-anime-background-style' %>
+  <%= link_to 'source' , 'https://www.fiverr.com/dazzy_daze/create-anime-background-style' %>
   <script type="text/javascript">
     let bg2 = document.getElementById("l2-back");
-        let bm2 = document.getElementById("l2-back-mid");
-        let mg2 = document.getElementById("l2-middle");
-        let mf2 = document.getElementById("l2-mid-front");
-        let fg2 = document.getElementById("l2-front");
+    let bm2 = document.getElementById("l2-back-mid");
+    let mg2 = document.getElementById("l2-middle");
+    let mf2 = document.getElementById("l2-mid-front");
+    let fg2 = document.getElementById("l2-front");
     
-        let bg3 = document.getElementById("l3-back");
-    		let bm3 = document.getElementById("l3-cloud2");
-        let mf3 = document.getElementById("l3-cloud1");
-        let fg3 = document.getElementById("l3-front");
+    let bg3 = document.getElementById("l3-back");
+    let bm3 = document.getElementById("l3-cloud2");
+    let mf3 = document.getElementById("l3-cloud1");
+    let fg3 = document.getElementById("l3-front");
+    let cloudText = document.querySelector(".clouds-text");
     
-        	window.addEventListener('scroll', function(){
-        		var value = window.scrollY;
-    				console.log(bm2.height);
-    
-    		bg2.style.top = value * 0.7 + 'px';
-        		bm2.style.top = value * 0.55 + 'px';
-        		mg2.style.top = value * 0.4 + 'px';
-        		mf2.style.top = value * 0.25 + 'px';
-    
-        		bg3.style.top = value * 0.9 - 700 + 'px';
-    				bm3.style.top = value * 0.7 - 550 + 'px';
-        		mf3.style.top = value * 0.38 - 280 + 'px';
+    window.addEventListener('scroll', function () {
+    	var value = window.scrollY;
     
     
+    	bg2.style.top = value * 0.7 + 'px';
+    	bm2.style.top = value * 0.55 + 'px';
+    	mg2.style.top = value * 0.4 + 'px';
+    	mf2.style.top = value * 0.25 + 'px';
     
-        	})
+    	bg3.style.top = value * 0.9 - 700 + 'px';
+    	bm3.style.top = value * 0.7 - 550 + 'px';
+    	mf3.style.top = value * 0.38 - 280 + 'px';
+    			cloudText.style.top = value * 0.2 + 'px';
+    
+    
+    
+    })
   </script>
 </div>
