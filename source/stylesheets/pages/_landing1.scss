@@ -72,8 +72,17 @@
 }
 
 #l1-about {
+  padding-top: 24px;
   height: 400px;
+  background-color: #ffd880;
+  background: linear-gradient(135deg, #fde67e55 25%, transparent 25%) -23px 0/
+      46px 46px,
+    linear-gradient(225deg, #fde67e 25%, transparent 25%) -23px 0/ 46px 46px,
+    linear-gradient(315deg, #fde67e55 25%, transparent 25%) 0px 0/ 46px 46px,
+    linear-gradient(45deg, #fde67e 25%, #ffd880 25%) 0px 0/ 46px 46px;
+
   h2 {
+    margin-bottom: 24px;
     color: white;
     text-shadow: 2px 2px 2px grey;
     margin-left: 40px;
@@ -82,12 +91,6 @@
 }
 .l1-about-inner {
   height: 100%;
-  background-color: #ffd880;
-  background: linear-gradient(135deg, #fde67e55 25%, transparent 25%) -23px 0/
-      46px 46px,
-    linear-gradient(225deg, #fde67e 25%, transparent 25%) -23px 0/ 46px 46px,
-    linear-gradient(315deg, #fde67e55 25%, transparent 25%) 0px 0/ 46px 46px,
-    linear-gradient(45deg, #fde67e 25%, #ffd880 25%) 0px 0/ 46px 46px;
 }
 #l1-mission {
   height: 100vh;
