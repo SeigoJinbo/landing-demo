@@ -30,6 +30,11 @@
     </div>
     <%= image_tag 'front.png' , id:"l3-front" %>
   </section>
+  <section id="night">
+    <%= image_tag 'nightback.jpg' , id:"l4-back" %>
+    <%= image_tag 'nightmid.png' , id:"l4-mid" %>
+    <%= image_tag 'nightfront.png' , id:"l4-front" %>
+  </section>
   <%= link_to 'source' , 'https://www.fiverr.com/dazzy_daze/create-anime-background-style' %>
   <script type="text/javascript">
     let bg2 = document.getElementById("l2-back");
@@ -44,6 +49,10 @@
     let fg3 = document.getElementById("l3-front");
     let cloudText = document.querySelector(".clouds-text");
     
+    		let bg4 = document.getElementById("l4-back");
+    let mid4 = document.getElementById("l4-mid");
+    let front4 = document.getElementById("l4-front");
+    
     window.addEventListener('scroll', function () {
     	var value = window.scrollY;
     
@@ -56,9 +65,11 @@
     	bg3.style.top = value * 0.9 - 700 + 'px';
     	bm3.style.top = value * 0.7 - 550 + 'px';
     	mf3.style.top = value * 0.38 - 280 + 'px';
-    			cloudText.style.top = value * 0.2 + 'px';
+    	cloudText.style.top = value * 0.2 + 'px';
     
-    
+    			bg4.style.top = value * 0.9 - 1420 + 'px';
+    	mid4.style.top = value * 0.7 - 1110 + 'px';
+    	// front4.style.top = value * 0.38 - 600 + 'px';
     
     })
   </script>
